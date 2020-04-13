@@ -33,32 +33,33 @@ let data = snapshot.to(Data)
 suite "HSLuv":
   test "forward functions":
     for hex, color in data.pairs:
-      let testRgb = hexToRgb(hex)
-      assert testRgb =~ color.rgb
-      let testXyz = rgbToXyz(testRgb)
-      assert testXyz =~ color.xyz
-      let testLuv = xyzToLuv(testXyz)
-      assert testLuv =~ color.luv
-      let testLch = luvToLch(testLuv)
-      assert testLch =~ color.lch
-      let testHsluv = lchToHsluv(testLch)
-      assert testHsluv =~ color.hsluv
-      let testHpluv = lchToHpluv(testLch)
-      assert testHpluv =~ color.hpluv
+      let
+        rgb = hexToRgb(hex)
+        xyz = rgbToXyz(rgb)
+        luv = xyzToLuv(xyz)
+        lch = luvToLch(luv)
+        hsluv = lchToHsluv(lch)
+        hpluv = lchToHpluv(lch)
+      assert rgb =~ color.rgb
+      assert xyz =~ color.xyz
+      assert luv =~ color.luv
+      assert lch =~ color.lch
+      assert hsluv =~ color.hsluv
+      assert hpluv =~ color.hpluv
 
   test "backward functions":
     for hex, color in data.pairs:
-      var testLch = hsluvToLch(color.hsluv)
-      assert testLch =~ color.lch
-      testLch = hpluvToLch(color.hpluv)
-      assert testLch =~ color.lch
-      let testLuv = lchToLuv(testLch)
-      assert testLuv =~ color.luv
-      let testXyz = luvToXyz(testLuv)
-      assert testXyz =~ color.xyz
-      let testRgb = xyzToRgb(testXyz)
-      assert testRgb =~ color.rgb
-      assert rgbToHex(testRgb) == hex
+      let
+        lch = hsluvToLch(color.hsluv)
+        luv = lchToLuv(lch)
+        xyz = luvToXyz(luv)
+        rgb = xyzToRgb(xyz)
+      assert lch =~ color.lch
+      assert luv =~ color.luv
+      assert xyz =~ color.xyz
+      assert rgb =~ color.rgb
+      assert hpluvToLch(color.hpluv) =~ color.lch
+      assert rgbToHex(rgb) == hex
 
   test "full test":
     for hex, color in data.pairs:
