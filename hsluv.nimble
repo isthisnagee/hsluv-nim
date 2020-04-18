@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.1.0"
+version       = "1.0.0"
 author        = "isthisnagee"
 description   = "A port of HSLuv, a human friendly alternative to HSL."
 license       = "MIT"

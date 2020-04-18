@@ -1,0 +1,11 @@
+Angle	hsluv/geometry.html#Angle	geometry: Angle	
+Point	hsluv/geometry.html#Point	geometry: Point	
+Line	hsluv/geometry.html#Line	geometry: Line	
+newLine	hsluv/geometry.html#newLine,float,float	geometry: newLine(slope: float; intercept: float): Line	
+intersectLineLine	hsluv/geometry.html#intersectLineLine,Line,Line	geometry: intersectLineLine(a: Line; b: Line): Point	
+distanceFromOrigin	hsluv/geometry.html#distanceFromOrigin,Point	geometry: distanceFromOrigin(point: Point): float	
+distanceLineFromOrigin	hsluv/geometry.html#distanceLineFromOrigin,Line	geometry: distanceLineFromOrigin(line: Line): float	
+perpendicularThroughPoint	hsluv/geometry.html#perpendicularThroughPoint,Line,Point	geometry: perpendicularThroughPoint(line: Line; point: Point): Line	
+angleFromOrigin	hsluv/geometry.html#angleFromOrigin,Point	geometry: angleFromOrigin(point: Point): Angle	
+normalizeAngle	hsluv/geometry.html#normalizeAngle,Angle	geometry: normalizeAngle(angle: Angle): Angle	
+lengthOfRayUntilIntersect	hsluv/geometry.html#lengthOfRayUntilIntersect,Angle,Line	geometry: lengthOfRayUntilIntersect(theta: Angle; line: Line): float	

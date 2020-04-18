@@ -1,0 +1,28 @@
+Coord	hsluv.html#Coord	hsluv: Coord	
+getBounds	hsluv.html#getBounds,float	hsluv: getBounds(L: float): seq[Line]	
+maxSafeChromaForL	hsluv.html#maxSafeChromaForL,float	hsluv: maxSafeChromaForL(L: float): float	
+maxChromaForLH	hsluv.html#maxChromaForLH,float,float	hsluv: maxChromaForLH(L, H: float): float	
+xyzToRgb	hsluv.html#xyzToRgb,Coord	hsluv: xyzToRgb(xyz: Coord): Coord	
+rgbToXyz	hsluv.html#rgbToXyz,Coord	hsluv: rgbToXyz(rgb: Coord): Coord	
+yToL	hsluv.html#yToL,float	hsluv: yToL(Y: float): float	
+lToY	hsluv.html#lToY,float	hsluv: lToY(L: float): float	
+xyzToLuv	hsluv.html#xyzToLuv,Coord	hsluv: xyzToLuv(xyz: Coord): Coord	
+luvToXyz	hsluv.html#luvToXyz,Coord	hsluv: luvToXyz(luv: Coord): Coord	
+luvToLch	hsluv.html#luvToLch,Coord	hsluv: luvToLch(luv: Coord): Coord	
+lchToLuv	hsluv.html#lchToLuv,Coord	hsluv: lchToLuv(lch: Coord): Coord	
+hsluvToLch	hsluv.html#hsluvToLch,Coord	hsluv: hsluvToLch(hsluv: Coord): Coord	
+lchToHsluv	hsluv.html#lchToHsluv,Coord	hsluv: lchToHsluv(lch: Coord): Coord	
+hpluvToLch	hsluv.html#hpluvToLch,Coord	hsluv: hpluvToLch(hpluv: Coord): Coord	
+lchToHpluv	hsluv.html#lchToHpluv,Coord	hsluv: lchToHpluv(lch: Coord): Coord	
+rgbToHex	hsluv.html#rgbToHex,Coord	hsluv: rgbToHex(rgb: Coord): string	
+hexToRgb	hsluv.html#hexToRgb,string	hsluv: hexToRgb(hex: string): Coord	
+lchToRgb	hsluv.html#lchToRgb,Coord	hsluv: lchToRgb(tup: Coord): Coord	
+rgbToLch	hsluv.html#rgbToLch,Coord	hsluv: rgbToLch(tup: Coord): Coord	
+hsluvToRgb	hsluv.html#hsluvToRgb,Coord	hsluv: hsluvToRgb(tup: Coord): Coord	
+rgbToHsluv	hsluv.html#rgbToHsluv,Coord	hsluv: rgbToHsluv(tup: Coord): Coord	
+hpluvToRgb	hsluv.html#hpluvToRgb,Coord	hsluv: hpluvToRgb(tup: Coord): Coord	
+rgbToHpluv	hsluv.html#rgbToHpluv,Coord	hsluv: rgbToHpluv(tup: Coord): Coord	
+hsluvToHex	hsluv.html#hsluvToHex,Coord	hsluv: hsluvToHex(tup: Coord): string	
+hpluvToHex	hsluv.html#hpluvToHex,Coord	hsluv: hpluvToHex(tup: Coord): string	
+hexToHsluv	hsluv.html#hexToHsluv,string	hsluv: hexToHsluv(s: string): Coord	
+hexToHpluv	hsluv.html#hexToHpluv,string	hsluv: hexToHpluv(s: string): Coord	
